@@ -4,9 +4,12 @@ import java.io.*;
 
 public class EmployeeTest {
 	public static void main(String []args) {
-		Employee EmpOne = new Employee("Timmy");
-		Employee EmpTwo = new Employee("Jim");
+		Employee EmpOne = new Employee("Timmy",30,"产品经理",3000);
+		Employee EmpTwo = new Employee("Jim",35,"高级产品经理",5000);
+		EmpOne.printEmployee();
+		EmpTwo.printEmployee();
 		
+		/*
 		EmpOne.empAge(30);
 		EmpOne.empDesignation("产品经理");
 		EmpOne.empSalary(3000);
@@ -18,5 +21,7 @@ public class EmployeeTest {
 		EmpTwo.empSalary(5000);
 		EmpTwo.printEmployee();
 		System.out.println();  
+		 */
+
 	}
 }

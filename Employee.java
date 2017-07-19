@@ -9,21 +9,27 @@ public class Employee {
 	double salary;
 	
 	//类的构造器
-	public Employee(String name){
+	public Employee(String name,int age,String designation,double salary){
 		this.name = name;
+		this.age = age;
+		this.designation = designation;
+		this.salary = salary;
 	}
-	//方法：设置age
-	public void empAge (int empAge){
-		age = empAge;
-	}
-	//方法：设置designation
-	public void empDesignation (String empDesignation){
-		designation = empDesignation;
-	}
-	//方法：设置salary
-	public void empSalary (double empSalary){
-		salary = empSalary;
-	}
+	
+	/*
+	   // 设置age的值
+	   public void empAge(int empAge){
+	      age =  empAge;
+	   }
+	   // 设置designation的值
+	   public void empDesignation(String empDesig){
+	      designation = empDesig;
+	   }
+	   // 设置salary的值
+	   public void empSalary(double empSalary){
+	      salary = empSalary;
+	   }
+	 */
 	
 	//打印信息
 	public void printEmployee(){
