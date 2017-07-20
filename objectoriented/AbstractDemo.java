@@ -1,5 +1,5 @@
 package objectoriented;
-/* ÎÄ¼şÃû : AbstractDemo.java */
+/* æ–‡ä»¶å : AbstractDemo.java */
 public class AbstractDemo
 {
    public static void main(String [] args)

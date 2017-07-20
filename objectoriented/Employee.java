@@ -1,12 +1,10 @@
 package objectoriented;
-/* ÎÄ¼şÃû : Employee.java */
+/* æ–‡ä»¶å : Employee.java */
 public abstract class Employee
 {
    private String name;
    private String address;
    private int number;
-   
-   //¹¹Ôì·½·¨£¬°üº¬3¸ö³ÉÔ±±äÁ¿
    public Employee(String name, String address, int number)
    {
       System.out.println("Constructing an Employee");
@@ -14,8 +12,6 @@ public abstract class Employee
       this.address = address;
       this.number = number;
    }
-   
-   //7¸ö³ÉÔ±·½·¨
    public double computePay()
    {
      System.out.println("Inside Employee computePay");
