@@ -1,5 +1,4 @@
 import java.util.Date;
-import java.util.*;
 import java.text.*;
   
 public class DateDemo {
