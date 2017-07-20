@@ -3,28 +3,28 @@ import java.text.*;
   
 public class DateDemo {
    public static void main(String args[]) {
-       // ³õÊ¼»¯ Date ¶ÔÏó
+       // åˆå§‹åŒ– Date å¯¹è±¡
        Date date = new Date();
         
-       // Ê¹ÓÃ toString() º¯ÊıÏÔÊ¾ÈÕÆÚÊ±¼ä
+       // ä½¿ç”¨ toString() å‡½æ•°æ˜¾ç¤ºæ—¥æœŸæ—¶é—´
        System.out.println(date.toString());
        
-       //¸ñÊ½»¯Ê±¼ä
+       //æ ¼å¼åŒ–æ—¶é—´
        SimpleDateFormat ft = new SimpleDateFormat ("E yyyy.MM.dd 'at' hh:mm:ss a zzz");
        System.out.println("Current Date: " + ft.format(date));
        
-       //cµÄÊ¹ÓÃ  
-       System.out.printf("È«²¿ÈÕÆÚºÍÊ±¼äĞÅÏ¢£º%tc%n",date);          
-       //fµÄÊ¹ÓÃ  
-       System.out.printf("Äê-ÔÂ-ÈÕ¸ñÊ½£º%tF%n",date);  
-       //dµÄÊ¹ÓÃ  
-       System.out.printf("ÔÂ/ÈÕ/Äê¸ñÊ½£º%tD%n",date);  
-       //rµÄÊ¹ÓÃ  
-       System.out.printf("HH:MM:SS PM¸ñÊ½£¨12Ê±ÖÆ£©£º%tr%n",date);  
-       //tµÄÊ¹ÓÃ  
-       System.out.printf("HH:MM:SS¸ñÊ½£¨24Ê±ÖÆ£©£º%tT%n",date);  
-       //RµÄÊ¹ÓÃ  
-       System.out.printf("HH:MM¸ñÊ½£¨24Ê±ÖÆ£©£º%tR",date);  
+       //cçš„ä½¿ç”¨  
+       System.out.printf("å…¨éƒ¨æ—¥æœŸå’Œæ—¶é—´ä¿¡æ¯ï¼š%tc%n",date);          
+       //fçš„ä½¿ç”¨  
+       System.out.printf("å¹´-æœˆ-æ—¥æ ¼å¼ï¼š%tF%n",date);  
+       //dçš„ä½¿ç”¨  
+       System.out.printf("æœˆ/æ—¥/å¹´æ ¼å¼ï¼š%tD%n",date);  
+       //rçš„ä½¿ç”¨  
+       System.out.printf("HH:MM:SS PMæ ¼å¼ï¼ˆ12æ—¶åˆ¶ï¼‰ï¼š%tr%n",date);  
+       //tçš„ä½¿ç”¨  
+       System.out.printf("HH:MM:SSæ ¼å¼ï¼ˆ24æ—¶åˆ¶ï¼‰ï¼š%tT%n",date);  
+       //Rçš„ä½¿ç”¨  
+       System.out.printf("HH:MMæ ¼å¼ï¼ˆ24æ—¶åˆ¶ï¼‰ï¼š%tR",date);  
        
    }
 }

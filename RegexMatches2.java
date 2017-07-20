@@ -1,5 +1,5 @@
 //http://www.runoob.com/java/java-regular-expressions.html
-//ÏÂÃæÊÇÒ»¸ö¶Ôµ¥´Ê "cat" ³öÏÖÔÚÊäÈë×Ö·û´®ÖĞ³öÏÖ´ÎÊı½øĞĞ¼ÆÊıµÄÀı×Ó£º
+//ä¸‹é¢æ˜¯ä¸€ä¸ªå¯¹å•è¯ "cat" å‡ºç°åœ¨è¾“å…¥å­—ç¬¦ä¸²ä¸­å‡ºç°æ¬¡æ•°è¿›è¡Œè®¡æ•°çš„ä¾‹å­ï¼š
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -7,14 +7,14 @@ import java.util.regex.Pattern;
 public class RegexMatches2 {
 	public static void main(String args[]) {
 		
-		// °´Ö¸¶¨Ä£Ê½ÔÚ×Ö·û´®²éÕÒ
+		// æŒ‰æŒ‡å®šæ¨¡å¼åœ¨å­—ç¬¦ä¸²æŸ¥æ‰¾
 		String line = "cat cat cat cattie cat";
 		String pattern = "\\bcat\\b";
 		
-		// ´´½¨ Pattern ¶ÔÏó
+		// åˆ›å»º Pattern å¯¹è±¡
 		Pattern r = Pattern.compile(pattern);
 
-		//´´½¨ matcher ¶ÔÏó
+		//åˆ›å»º matcher å¯¹è±¡
 		Matcher m = r.matcher(line);	
 		int count = 0;
 		

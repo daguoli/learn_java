@@ -1,5 +1,5 @@
 //http://www.runoob.com/java/java-regular-expressions.html
-//ÏÂÃæµÄÀı×ÓËµÃ÷ÈçºÎ´ÓÒ»¸ö¸ø¶¨µÄ×Ö·û´®ÖĞÕÒµ½Êı×Ö´®£º
+//ä¸‹é¢çš„ä¾‹å­è¯´æ˜å¦‚ä½•ä»ä¸€ä¸ªç»™å®šçš„å­—ç¬¦ä¸²ä¸­æ‰¾åˆ°æ•°å­—ä¸²ï¼š
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -7,20 +7,20 @@ import java.util.regex.Pattern;
 public class RegexMatches {
 	public static void main(String args[]) {
 		
-		// °´Ö¸¶¨Ä£Ê½ÔÚ×Ö·û´®²éÕÒ
+		// æŒ‰æŒ‡å®šæ¨¡å¼åœ¨å­—ç¬¦ä¸²æŸ¥æ‰¾
 		String line = "This order was placed for QT3000! OK?";
 		String pattern = "(\\D*)(\\d+)(.*)";
 		
-		// ´´½¨ Pattern ¶ÔÏó
+		// åˆ›å»º Pattern å¯¹è±¡
 		Pattern r = Pattern.compile(pattern);
 		
-		// ÏÖÔÚ´´½¨ matcher ¶ÔÏó
+		// ç°åœ¨åˆ›å»º matcher å¯¹è±¡
 		Matcher m = r.matcher(line);
 		if (m.find( )) {
-			System.out.println("Found value: " + m.group(0) );	//ÌØÊâµÄ×é£¨group(0)£©£¬´ú±íÕû¸ö±í´ïÊ½
-			System.out.println("Found value: " + m.group(1) );	//·ÇÊı×Ö×Ö·ûÆ¥Åä
-			System.out.println("Found value: " + m.group(2) );	//Êı×Ö×Ö·ûÆ¥Åä
-			System.out.println("Found value: " + m.group(3) ); 	//ÆäËû
+			System.out.println("Found value: " + m.group(0) );	//ç‰¹æ®Šçš„ç»„ï¼ˆgroup(0)ï¼‰ï¼Œä»£è¡¨æ•´ä¸ªè¡¨è¾¾å¼
+			System.out.println("Found value: " + m.group(1) );	//éæ•°å­—å­—ç¬¦åŒ¹é…
+			System.out.println("Found value: " + m.group(2) );	//æ•°å­—å­—ç¬¦åŒ¹é…
+			System.out.println("Found value: " + m.group(3) ); 	//å…¶ä»–
 		} else {
 			System.out.println("NO MATCH");
 		}

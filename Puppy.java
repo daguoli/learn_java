@@ -4,26 +4,26 @@ public class Puppy {
 	int puppyAge;
 	String puppyColor ;
 	
-	//PuppyÀàµÄ¹¹ÔìÆ÷£¬¸Ã¹¹ÔìÆ÷Ö»ÓĞÒ»¸ö²ÎÊı£ºname
+	//Puppyç±»çš„æ„é€ å™¨ï¼Œè¯¥æ„é€ å™¨åªæœ‰ä¸€ä¸ªå‚æ•°ï¼šname
 	public Puppy(String name){
-		System.out.println("Ğ¡¹·µÄÃû×ÖÊÇ£º" + name );
+		System.out.println("å°ç‹—çš„åå­—æ˜¯ï¼š" + name );
 	}
 	
-	//·½·¨£ºÉèÖÃÄêÁä
+	//æ–¹æ³•ï¼šè®¾ç½®å¹´é¾„
 	public void setAge( int age ){
 		puppyAge = age;
 	}
 	public int getAge( ){
-		System.out.println("Ğ¡¹·µÄÄêÁäÊÇ£º" + puppyAge );
+		System.out.println("å°ç‹—çš„å¹´é¾„æ˜¯ï¼š" + puppyAge );
 		return puppyAge;
 	}
 
-	//·½·¨£ºÉèÖÃÑÕÉ«
+	//æ–¹æ³•ï¼šè®¾ç½®é¢œè‰²
 	public void setColor( String color ){
 		puppyColor = color;
 	}
 	public String getColor( ){
-		System.out.println("Ğ¡¹·µÄÑÕÉ«ÊÇ£º" + puppyColor );
+		System.out.println("å°ç‹—çš„é¢œè‰²æ˜¯ï¼š" + puppyColor );
 		return puppyColor;
 	}
 	

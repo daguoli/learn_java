@@ -8,7 +8,7 @@ public class Employee {
 	String designation;
 	double salary;
 	
-	//ÀàµÄ¹¹ÔìÆ÷
+	//ç±»çš„æ„é€ å™¨
 	public Employee(String name,int age,String designation,double salary){
 		this.name = name;
 		this.age = age;
@@ -17,35 +17,34 @@ public class Employee {
 	}
 	
 	/*
-	 * ÓÃ¹¹Ôì·½·¨ºÍÓÃset/getµÄÇø±ğ£º
-	 * ÓÃ¹¹Ôì·½·¨new³öÀ´µÄ¶ÔÏó£¬Ö»ÓĞÔÚ¹¹ÔìµÄÊ±ºò»áµ÷ÓÃÒ»´Î£¬ºóÃæ¾ÍÃ»ÓĞÓÃÁË£»
-	 * µ«ÊÇset·½·¨£¬¿ÉÒÔÔÚÈÎºÎĞèÒªµÄÊ±ºò£¬½øĞĞµ÷ÓÃ¡£×ÓÀàÀï¿ÉÒÔ¸²¸Ç¸¸ÀàÀïµÄÍ¬Ãû·½·¨¡£
-	 * Ò»°ãÎÒÃÇÉè¼ÆÀàµÄÊ±ºò£¬Ã¿¸öÊôĞÔ£¬¶¼¸½´øÒ»¸öset ºÍ get·½·¨===¡£Õâ¸ösetºÍget¿ÉÒÔ¶Ô¹¹Ôì·½·¨ÖĞµÄÊôĞÔ½øĞĞÖØĞÂ¸²¸Ç¶¨Òå£»
+	 * ç”¨æ„é€ æ–¹æ³•å’Œç”¨set/getçš„åŒºåˆ«ï¼š
+	 * ç”¨æ„é€ æ–¹æ³•newå‡ºæ¥çš„å¯¹è±¡ï¼Œåªæœ‰åœ¨æ„é€ çš„æ—¶å€™ä¼šè°ƒç”¨ä¸€æ¬¡ï¼Œåé¢å°±æ²¡æœ‰ç”¨äº†ï¼›
+	 * ä½†æ˜¯setæ–¹æ³•ï¼Œå¯ä»¥åœ¨ä»»ä½•éœ€è¦çš„æ—¶å€™ï¼Œè¿›è¡Œè°ƒç”¨ã€‚å­ç±»é‡Œå¯ä»¥è¦†ç›–çˆ¶ç±»é‡Œçš„åŒåæ–¹æ³•ã€‚
+	 * ä¸€èˆ¬æˆ‘ä»¬è®¾è®¡ç±»çš„æ—¶å€™ï¼Œæ¯ä¸ªå±æ€§ï¼Œéƒ½é™„å¸¦ä¸€ä¸ªset å’Œ getæ–¹æ³•===ã€‚è¿™ä¸ªsetå’Œgetå¯ä»¥å¯¹æ„é€ æ–¹æ³•ä¸­çš„å±æ€§è¿›è¡Œé‡æ–°è¦†ç›–å®šä¹‰ï¼›
 	 * 
-	 * ¹¹Ôì·½·¨»¹ÓĞÒ»¸öÓÃÍ¾£º½«ÊôĞÔµÄ±ØÌîĞÔ½øĞĞÔ¼Êø¡£±ÈÈçÄãµÄemployee Ãû×Ö²»ÄÜÎª¿Õ£¬ÄÇÄã¾Í¶¨ÒåÒ»¸ö¹¹Ôì·½·¨£¬±ØĞë´«Èëname£¬±ÜÃâÁË³öÏÖÒ»¸öÃ»ÓĞÃû×ÖµÄ employee
+	 * æ„é€ æ–¹æ³•è¿˜æœ‰ä¸€ä¸ªç”¨é€”ï¼šå°†å±æ€§çš„å¿…å¡«æ€§è¿›è¡Œçº¦æŸã€‚æ¯”å¦‚ä½ çš„employee åå­—ä¸èƒ½ä¸ºç©ºï¼Œé‚£ä½ å°±å®šä¹‰ä¸€ä¸ªæ„é€ æ–¹æ³•ï¼Œå¿…é¡»ä¼ å…¥nameï¼Œé¿å…äº†å‡ºç°ä¸€ä¸ªæ²¡æœ‰åå­—çš„ employee
 	 */
 	
 	/*
-	   // ÉèÖÃageµÄÖµ
+	   // è®¾ç½®ageçš„å€¼
 	   public void empAge(int empAge){
 	      age =  empAge;
 	   }
-	   // ÉèÖÃdesignationµÄÖµ
+	   // è®¾ç½®designationçš„å€¼
 	   public void empDesignation(String empDesig){
 	      designation = empDesig;
 	   }
-	   // ÉèÖÃsalaryµÄÖµ
+	   // è®¾ç½®salaryçš„å€¼
 	   public void empSalary(double empSalary){
 	      salary = empSalary;
 	   }
 	 */
 	
-	//´òÓ¡ĞÅÏ¢
+	//æ‰“å°ä¿¡æ¯
 	public void printEmployee(){
-		System.out.println("Ãû×Ö:" + name );
-		System.out.println("ÄêÁä:" + age );
-		System.out.println("Ö°Î»:" + designation );
-		System.out.println("Ğ½Ë®:" + salary);
+		System.out.println("åå­—:" + name );
+		System.out.println("å¹´é¾„:" + age );
+		System.out.println("èŒä½:" + designation );
+		System.out.println("è–ªæ°´:" + salary);
 	}
 }
-

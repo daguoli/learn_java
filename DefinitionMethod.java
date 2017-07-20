@@ -1,5 +1,5 @@
 //http://www.runoob.com/java/java-methods.html
-//ÏÂÃæµÄÀı×ÓÑİÊ¾ÁËÈçºÎ¶¨ÒåÒ»¸ö·½·¨£¬ÒÔ¼°ÈçºÎµ÷ÓÃËü£º
+//ä¸‹é¢çš„ä¾‹å­æ¼”ç¤ºäº†å¦‚ä½•å®šä¹‰ä¸€ä¸ªæ–¹æ³•ï¼Œä»¥åŠå¦‚ä½•è°ƒç”¨å®ƒï¼š
 
 public class DefinitionMethod {
 	public static int max (int num1 ,int num2) {
@@ -13,7 +13,7 @@ public class DefinitionMethod {
 		return result;
 	}
 	
-	//voidÀàĞÍ·½·¨£¬Ëü²»·µ»ØÖµ
+	//voidç±»å‹æ–¹æ³•ï¼Œå®ƒä¸è¿”å›å€¼
 	public static void printGrade (double score ) {
 		String level;
 		if ( score >= 90.0 ){
@@ -32,11 +32,11 @@ public class DefinitionMethod {
 	}
 	
 	public static void main(String []args) {
-		//µ÷ÓÃ±È½Ï´óĞ¡µÄ·½·¨
+		//è°ƒç”¨æ¯”è¾ƒå¤§å°çš„æ–¹æ³•
 		int k = max(5, 8);
-		System.out.println( "5 ºÍ 8 ±È½Ï£¬×î´óÖµÊÇ£º" + k);
+		System.out.println( "5 å’Œ 8 æ¯”è¾ƒï¼Œæœ€å¤§å€¼æ˜¯ï¼š" + k);
 		
-		//µ÷ÓÃ´òÓ¡³É¼¨µÈ¼¶µÄ·½·¨
+		//è°ƒç”¨æ‰“å°æˆç»©ç­‰çº§çš„æ–¹æ³•
 		printGrade(78.5);
 	}
 }

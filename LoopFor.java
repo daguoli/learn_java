@@ -8,7 +8,7 @@ public class LoopFor {
 				break;
 				//continue;
 			}
-			System.out.println("i£º" + i );
+			System.out.println("i:" + i );
 			
 		}
 	}

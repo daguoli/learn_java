@@ -1,5 +1,5 @@
 //http://www.runoob.com/java/java-files-io.html
-//Ê¹ÓÃ BufferedReader µÄ readLine() ·½·¨,´Ó±ê×¼ÊäÈë¶ÁÈ¡Ò»¸ö×Ö·û´®ĞèÒª
+//ä½¿ç”¨ BufferedReader çš„ readLine() æ–¹æ³•,ä»æ ‡å‡†è¾“å…¥è¯»å–ä¸€ä¸ªå­—ç¬¦ä¸²éœ€è¦
 
 import java.io.*;
 
@@ -7,13 +7,13 @@ public class BRReadLines {
 	public static void main(String args[]) throws IOException {
 		String str;
 		
-		// Ê¹ÓÃ System.in ´´½¨ BufferedReader 
+		// ä½¿ç”¨ System.in åˆ›å»º BufferedReader 
 	    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 	    
 	    System.out.println("Enter lines of text.");
 	    System.out.println("Enter 'end' to quit.");
 	    
-	    // Ê¹ÓÃreadLine() ·½·¨
+	    // ä½¿ç”¨readLine() æ–¹æ³•
 	    do {
 	       str = br.readLine();
 	       System.out.println(str);

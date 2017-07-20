@@ -1,13 +1,13 @@
-//ÌâÄ¿£ºÅÐ¶Ï101-200Ö®¼äÓÐ¶àÉÙ¸öËØÊý£¬²¢Êä³öËùÓÐËØÊý¡£
-//ÅÐ¶ÏËØÊýµÄ·½·¨£ºÓÃÒ»¸öÊý·Ö±ðÈ¥³ý2µ½sqrt(Õâ¸öÊý)£¬Èç¹ûÄÜ±»Õû³ý£¬Ôò±íÃ÷´ËÊý²»ÊÇËØÊý£¬·´Ö®ÊÇËØÊý¡£ ¡¡
+//é¢˜ç›®ï¼šåˆ¤æ–­101-200ä¹‹é—´æœ‰å¤šå°‘ä¸ªç´ æ•°ï¼Œå¹¶è¾“å‡ºæ‰€æœ‰ç´ æ•°ã€‚
+//åˆ¤æ–­ç´ æ•°çš„æ–¹æ³•ï¼šç”¨ä¸€ä¸ªæ•°åˆ†åˆ«åŽ»é™¤2åˆ°sqrt(è¿™ä¸ªæ•°)ï¼Œå¦‚æžœèƒ½è¢«æ•´é™¤ï¼Œåˆ™è¡¨æ˜Žæ­¤æ•°ä¸æ˜¯ç´ æ•°ï¼Œåä¹‹æ˜¯ç´ æ•°ã€‚ ã€€
 
 public class ZPractice12 {
 	public static void main(String []args) {
 	    int count = 0; 
 		
-	    //iÊÇÐèÒªÅÐ¶ÏÊÇ²»ÊÇËØÊýµÄnum£¬kÊÇ³ýÊý
+	    //iæ˜¯éœ€è¦åˆ¤æ–­æ˜¯ä¸æ˜¯ç´ æ•°çš„numï¼Œkæ˜¯é™¤æ•°
 		for ( int i = 101; i <= 200; i++ ){
-			int flag = 0; //Ä¬ÈÏiÎªËØÊý
+			int flag = 0; //é»˜è®¤iä¸ºç´ æ•°
 			for (int k = 2; k < i; k++){
 				if (i%k == 0){
 					flag = 1;
@@ -15,10 +15,10 @@ public class ZPractice12 {
 				}
 			}
 			if (flag == 0){
-				System.out.println(i + " ÊÇËØÊý" );
+				System.out.println(i + " æ˜¯ç´ æ•°" );
 			    count = count + 1 ;
 			}
 		}
-		System.out.println("101-200Ö®¼äÒ»¹²ÓÐËØÊý£º " + count + " ¸ö" );
+		System.out.println("101-200ä¹‹é—´ä¸€å…±æœ‰ç´ æ•°ï¼š " + count + " ä¸ª" );
 	}
 }

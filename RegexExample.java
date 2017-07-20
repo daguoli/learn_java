@@ -8,7 +8,7 @@ public class RegexExample {
 	   String pattern = ".*runoob.*";
 	   
 	   boolean isMatch = Pattern.matches(pattern, content);
-	   System.out.println("×Ö·û´®ÊÇ·ñ°üº¬ÁË'runoob'×Ó×Ö·û´®£º" + isMatch );
+	   System.out.println("å­—ç¬¦ä¸²æ˜¯å¦åŒ…å«äº†'runoob'å­å­—ç¬¦ä¸²ï¼š" + isMatch );
 	   
    }
 }

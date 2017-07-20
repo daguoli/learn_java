@@ -1,4 +1,4 @@
-//½«Ò»¸öÕýÕûÊý·Ö½âÖÊÒòÊý¡£ÀýÈç£ºÊäÈë90,´òÓ¡³ö90=2*3*3*5¡£
+//å°†ä¸€ä¸ªæ­£æ•´æ•°åˆ†è§£è´¨å› æ•°ã€‚ä¾‹å¦‚ï¼šè¾“å…¥90,æ‰“å°å‡º90=2*3*3*5ã€‚
 
 import java.util.Scanner;
 import java.util.ArrayList;
@@ -7,25 +7,25 @@ public class ZPractice14 {
 	public static void main(String []args) {
 		ArrayList list = new ArrayList();
 		
-		//´ÓÆÁÄ»ÊäÈë´ý·Ö½âÖÊÒòÊýµÄÊý×Ö
+		//ä»Žå±å¹•è¾“å…¥å¾…åˆ†è§£è´¨å› æ•°çš„æ•°å­—
 		Scanner input = new Scanner(System.in);
 		System.out.print("Please enter num :"); 
 		int num = input.nextInt();
 		
-		//·Ö½âÖÊÒòÊý
+		//åˆ†è§£è´¨å› æ•°
 		while (num > 1){
 			for (int i = 2; i <= num; i++){
 				if (num%i == 0){
-					System.out.println("ÒòÊý:" + i ); 
+					System.out.println("å› æ•°:" + i ); 
 					num = num/i; 
 					
-					//½«ÖÊÒòÊý´æÈëÊý×éÖÐ
+					//å°†è´¨å› æ•°å­˜å…¥æ•°ç»„ä¸­
 					list.add(i);
 					
 					break;
 				}
 			}
 		}
-		System.out.println( "ÖÊÒòÊýÎª:" + list);
+		System.out.println( "è´¨å› æ•°ä¸º:" + list);
 	}
 }

@@ -1,4 +1,4 @@
-//ÊäÈëÈı¸öÕûÊıx,y,z£¬Çë°ÑÕâÈı¸öÊıÓÉĞ¡µ½´óÊä³ö¡£
+//è¾“å…¥ä¸‰ä¸ªæ•´æ•°x,y,zï¼Œè¯·æŠŠè¿™ä¸‰ä¸ªæ•°ç”±å°åˆ°å¤§è¾“å‡ºã€‚
 
 import java.util.Scanner;
 
@@ -16,7 +16,7 @@ public class ZPractice5 {
 	}
 
 	public static void main(String []args) {
-		//»ñÈ¡ÆÁÄ»ÊäÈëµÄx,y,z
+		//è·å–å±å¹•è¾“å…¥çš„x,y,z
 		Scanner input = new Scanner(System.in);
 		System.out.print("Please enter num x :"); 
 		int x = input.nextInt();
@@ -25,13 +25,11 @@ public class ZPractice5 {
 		System.out.print("Please enter num z :"); 
 		int z = input.nextInt();
 		
-		//±È½ÏÈı¸öÊı×ÖµÄ´óĞ¡
+		//æ¯”è¾ƒä¸‰ä¸ªæ•°å­—çš„å¤§å°
 		int k = max(x,y);
 		int j = max(x,z);
 		int maxnum = max (k ,j);
 		System.out.println("max num is:" + maxnum); 
 		
 	}
-
-	
 }

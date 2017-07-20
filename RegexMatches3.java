@@ -1,9 +1,9 @@
 //http://www.runoob.com/java/java-regular-expressions.html
 /*
- * ½âÊÍmatches ºÍ lookingAt ·½·¨:
- * matches ºÍ lookingAt ·½·¨¶¼ÓÃÀ´³¢ÊÔÆ¥ÅäÒ»¸öÊäÈëĞòÁĞÄ£Ê½¡£
- * ²»Í¬ÊÇ matcher ÒªÇóÕû¸öĞòÁĞ¶¼Æ¥Åä£¬¶ølookingAt ²»ÒªÇó¡£
- * lookingAt ·½·¨ËäÈ»²»ĞèÒªÕû¾ä¶¼Æ¥Åä£¬µ«ÊÇĞèÒª´ÓµÚÒ»¸ö×Ö·û¿ªÊ¼Æ¥Åä¡£
+ * è§£é‡Šmatches å’Œ lookingAt æ–¹æ³•:
+ * matches å’Œ lookingAt æ–¹æ³•éƒ½ç”¨æ¥å°è¯•åŒ¹é…ä¸€ä¸ªè¾“å…¥åºåˆ—æ¨¡å¼ã€‚
+ * ä¸åŒæ˜¯ matcher è¦æ±‚æ•´ä¸ªåºåˆ—éƒ½åŒ¹é…ï¼Œè€ŒlookingAt ä¸è¦æ±‚ã€‚
+ * lookingAt æ–¹æ³•è™½ç„¶ä¸éœ€è¦æ•´å¥éƒ½åŒ¹é…ï¼Œä½†æ˜¯éœ€è¦ä»ç¬¬ä¸€ä¸ªå­—ç¬¦å¼€å§‹åŒ¹é…ã€‚
 */
 
 import java.util.regex.Matcher;
@@ -32,4 +32,3 @@ public class RegexMatches3 {
 	       System.out.println("lookingAt(): "+matcher2.lookingAt());
 	}
 }
-		

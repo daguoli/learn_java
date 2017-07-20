@@ -5,19 +5,19 @@ public class Array {
 	public static void main(String []args) {
 		double[] myList = { 1.1, 1.3, 1.44, 2.58 };
 		
-		//´òÓ¡ËùÓĞÊı×éÔªËØ
+		//æ‰“å°æ‰€æœ‰æ•°ç»„å…ƒç´ 
 		for ( int i = 0; i < myList.length; i++ ){
 			System.out.println( myList[i] );
 		}
 
-		//¼ÆËãÔªËØ×ÜºÍ
+		//è®¡ç®—å…ƒç´ æ€»å’Œ
 		double sum = 0 ;
 		for ( int i = 0; i < myList.length; i++ ){
 			sum = sum + myList[i];
 		}
 		System.out.println("sum is:" + sum );
 		
-		//²éÕÒ×î´óÖµ
+		//æŸ¥æ‰¾æœ€å¤§å€¼
 		double max = myList[0];
 		for ( int i = 0; i < myList.length; i++ ){
 			if (myList[i] > max){

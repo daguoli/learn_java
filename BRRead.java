@@ -1,5 +1,5 @@
 //http://www.runoob.com/java/java-files-io.html
-//Ê¹ÓÃ BufferedReader ÔÚ¿ØÖÆÌ¨¶ÁÈ¡×Ö·û
+//ä½¿ç”¨ BufferedReader åœ¨æ§åˆ¶å°è¯»å–å­—ç¬¦
 
 import java.io.*;
 
@@ -7,14 +7,14 @@ public class BRRead {
 	public static void main(String args[]) throws IOException {
 		char c;
 		
-		// Ê¹ÓÃ System.in ´´½¨ BufferedReader 
+		// ä½¿ç”¨ System.in åˆ›å»º BufferedReader 
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
-		System.out.println("ÊäÈë×Ö·û, °´ÏÂ 'q' ¼üÍË³ö¡£");
+		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½, ï¿½ï¿½ï¿½ï¿½ 'q' ï¿½ï¿½ï¿½Ë³ï¿½ï¿½ï¿½");
 		
-	    // ¶ÁÈ¡×Ö·û
-		// Ã¿´Îµ÷ÓÃ read() ·½·¨£¬Ëü´ÓÊäÈëÁ÷¶ÁÈ¡Ò»¸ö×Ö·û²¢°Ñ¸Ã×Ö·û×÷ÎªÕûÊıÖµ·µ»Ø¡£ µ±Á÷½áÊøµÄÊ±ºò·µ»Ø -1¡£¸Ã·½·¨Å×³ö IOException¡£
-	    do {
+	    // è¯»å–å­—ç¬¦
+		// æ¯æ¬¡è°ƒç”¨ read() æ–¹æ³•ï¼Œå®ƒä»è¾“å…¥æµè¯»å–ä¸€ä¸ªå­—ç¬¦å¹¶æŠŠè¯¥å­—ç¬¦ä½œä¸ºæ•´æ•°å€¼è¿”å›ã€‚ å½“æµç»“æŸçš„æ—¶å€™è¿”å› -1ã€‚è¯¥æ–¹æ³•æŠ›å‡º IOExceptionã€‚
+		do {
 	       c = (char) br.read();
 	       System.out.println(c);
 	    } while(c != 'q');

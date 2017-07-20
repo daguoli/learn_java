@@ -1,9 +1,9 @@
-/* ÌâÄ¿£ºÆóÒµ·¢·ÅµÄ½±½ð¸ù¾ÝÀûÈóÌá³É¡£
- * 	ÀûÈó(I)µÍÓÚ»òµÈÓÚ10ÍòÔªÊ±£¬½±½ð¿ÉÌá10%£»
- * 	ÀûÈó¸ßÓÚ10ÍòÔª£¬µÍÓÚ20ÍòÔªÊ±£¬µÍÓÚ10ÍòÔªµÄ²¿·Ö°´10%Ìá³É£¬¸ßÓÚ10ÍòÔªµÄ²¿·Ö£¬¿ÉÌá³É7.5%£»
- * 	20Íòµ½40ÍòÖ®¼äÊ±£¬¸ßÓÚ20ÍòÔªµÄ²¿·Ö£¬¿ÉÌá³É5%£»40Íòµ½60ÍòÖ®¼äÊ±¸ßÓÚ40ÍòÔªµÄ²¿·Ö£¬¿ÉÌá³É3%£»
- * 	60Íòµ½100ÍòÖ®¼äÊ±£¬¸ßÓÚ60ÍòÔªµÄ²¿·Ö£¬¿ÉÌá³É1.5%£¬¸ßÓÚ100ÍòÔªÊ±£¬³¬¹ý100ÍòÔªµÄ²¿·Ö°´1%Ìá³É;
- * 	´Ó¼üÅÌÊäÈëµ±ÔÂÀûÈóI£¬ÇóÓ¦·¢·Å½±½ð×ÜÊý£¿
+/* é¢˜ç›®ï¼šä¼ä¸šå‘æ”¾çš„å¥–é‡‘æ ¹æ®åˆ©æ¶¦ææˆã€‚
+ * 	åˆ©æ¶¦(I)ä½ŽäºŽæˆ–ç­‰äºŽ10ä¸‡å…ƒæ—¶ï¼Œå¥–é‡‘å¯æ10%ï¼›
+ * 	åˆ©æ¶¦é«˜äºŽ10ä¸‡å…ƒï¼Œä½ŽäºŽ20ä¸‡å…ƒæ—¶ï¼Œä½ŽäºŽ10ä¸‡å…ƒçš„éƒ¨åˆ†æŒ‰10%ææˆï¼Œé«˜äºŽ10ä¸‡å…ƒçš„éƒ¨åˆ†ï¼Œå¯ææˆ7.5%ï¼›
+ * 	20ä¸‡åˆ°40ä¸‡ä¹‹é—´æ—¶ï¼Œé«˜äºŽ20ä¸‡å…ƒçš„éƒ¨åˆ†ï¼Œå¯ææˆ5%ï¼›40ä¸‡åˆ°60ä¸‡ä¹‹é—´æ—¶é«˜äºŽ40ä¸‡å…ƒçš„éƒ¨åˆ†ï¼Œå¯ææˆ3%ï¼›
+ * 	60ä¸‡åˆ°100ä¸‡ä¹‹é—´æ—¶ï¼Œé«˜äºŽ60ä¸‡å…ƒçš„éƒ¨åˆ†ï¼Œå¯ææˆ1.5%ï¼Œé«˜äºŽ100ä¸‡å…ƒæ—¶ï¼Œè¶…è¿‡100ä¸‡å…ƒçš„éƒ¨åˆ†æŒ‰1%ææˆ;
+ * 	ä»Žé”®ç›˜è¾“å…¥å½“æœˆåˆ©æ¶¦Iï¼Œæ±‚åº”å‘æ”¾å¥–é‡‘æ€»æ•°ï¼Ÿ
 */
 
 import java.util.Scanner;
@@ -11,12 +11,12 @@ import java.util.Scanner;
 public class ZPractice2 {
 	public static void main(String []args) {
 		
-		//»ñÈ¡ÆÁÄ»ÊäÈëµÄÀûÈóÖµ
+		//èŽ·å–å±å¹•è¾“å…¥çš„åˆ©æ¶¦å€¼
 		Scanner input = new Scanner(System.in);
 		System.out.print("Please enter profit value:"); 
 		double x = input.nextInt();
 	    
-		//¼ÆËã½±½ð
+		//è®¡ç®—å¥–é‡‘
 		double bonus = x;
 		if (x <= 100000){
 			bonus = x * 0.1; 
@@ -36,6 +36,6 @@ public class ZPractice2 {
 		else {
 			bonus = 10000 + 7500 + 10000 + 6000 + 6000 + ( x - 1000000 ) * 0.01;
 		}
-		System.out.println("½±½ðÊÇ:" + bonus + "Ôª"); 
+		System.out.println("å¥–é‡‘æ˜¯:" + bonus + "å…ƒ"); 
 	}
 }

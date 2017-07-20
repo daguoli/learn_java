@@ -1,24 +1,24 @@
 class Animals{
-	//³Ô¶«Î÷·½·¨µÄ¾ßÌåÊµÏÖ
+	//åƒä¸œè¥¿æ–¹æ³•çš„å…·ä½“å®ç°
 	public void move(){
-		System.out.println("¶¯Îï¿ÉÒÔÒÆ¶¯");
+		System.out.println("åŠ¨ç‰©å¯ä»¥ç§»åŠ¨");
 	}
 }
 
-//ÖØĞ´ÊÇ×ÓÀà¶Ô¸¸ÀàµÄÔÊĞí·ÃÎÊµÄ·½·¨µÄÊµÏÖ¹ı³Ì½øĞĞÖØĞÂ±àĞ´, ·µ»ØÖµºÍĞÎ²Î¶¼²»ÄÜ¸Ä±ä¡£¼´Íâ¿Ç²»±ä£¬ºËĞÄÖØĞ´£¡
+//é‡å†™æ˜¯å­ç±»å¯¹çˆ¶ç±»çš„å…è®¸è®¿é—®çš„æ–¹æ³•çš„å®ç°è¿‡ç¨‹è¿›è¡Œé‡æ–°ç¼–å†™, è¿”å›å€¼å’Œå½¢å‚éƒ½ä¸èƒ½æ”¹å˜ã€‚å³å¤–å£³ä¸å˜ï¼Œæ ¸å¿ƒé‡å†™ï¼
 class Dog extends Animals{
 	public void move(){
-		super.move(); // Ó¦ÓÃsuperÀàµÄ·½·¨
-		System.out.println("¹·¿ÉÒÔÅÜºÍ×ß");
+		super.move(); // åº”ç”¨superç±»çš„æ–¹æ³•
+		System.out.println("ç‹—å¯ä»¥è·‘å’Œèµ°");
 	}
 }
  
 public class TestDog{
 	public static void main(String args[]){
-		Animals a = new Animals(); // Animal ¶ÔÏó
-		Animals b = new Dog(); // Dog ¶ÔÏó
+		Animals a = new Animals(); // Animal å¯¹è±¡
+		Animals b = new Dog(); // Dog å¯¹è±¡
 
-		a.move();// Ö´ĞĞ Animal ÀàµÄ·½·¨
-		b.move();//Ö´ĞĞ Dog ÀàµÄ·½·¨
+		a.move();// æ‰§è¡Œ Animal ç±»çš„æ–¹æ³•
+		b.move();//æ‰§è¡Œ Dog ç±»çš„æ–¹æ³•
 	}
 }

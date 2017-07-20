@@ -1,4 +1,4 @@
-// ÌâÄ¿£ºÓÐËÄ¸öÊý×Ö£º1¡¢2¡¢3¡¢4£¬ÄÜ×é³É¶àÉÙ¸ö»¥²»ÏàÍ¬ÇÒÎÞÖØ¸´Êý×ÖµÄÈýÎ»Êý£¿¸÷ÊÇ¶àÉÙ£¿
+// é¢˜ç›®ï¼šæœ‰å››ä¸ªæ•°å­—ï¼š1ã€2ã€3ã€4ï¼Œèƒ½ç»„æˆå¤šå°‘ä¸ªäº’ä¸ç›¸åŒä¸”æ— é‡å¤æ•°å­—çš„ä¸‰ä½æ•°ï¼Ÿå„æ˜¯å¤šå°‘ï¼Ÿ
 
 public class ZPractice1 {
 	public static void main(String []args) {
@@ -8,7 +8,7 @@ public class ZPractice1 {
 			for ( int j = 0; j < myList.length; j++ ){
 				for ( int k = 0; k < myList.length; k++ ){
 					if ((myList[i] != myList[j] ) && (myList[i] != myList[k] ) && (myList[j] != myList[k] )){
-						System.out.println( "·ûºÏÌõ¼þµÄÈýÎ»Êý£º" + myList[i] + myList[j] + myList[k] );
+						System.out.println( "ç¬¦åˆæ¡ä»¶çš„ä¸‰ä½æ•°ï¼š" + myList[i] + myList[j] + myList[k] );
 					}
 				}
 			}
