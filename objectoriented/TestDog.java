@@ -19,9 +19,9 @@ class Animal{
 }
 
 public class Dog extends Animal{
-    public Dog(String myName, int myid) { 
-        super(myName, myid); 
-    } 
+	public Dog(String myName, int myid) { 
+		super(myName, myid); 
+	} 
 	public void eat(){
 		System.out.println(name + "正在吃骨头");
 	}
