@@ -20,7 +20,7 @@ class Animal{
 
 public class Dog extends Animal{
 	public void eat(){
-	   System.out.println(name + "正在吃骨头");
+		System.out.println(name + "正在吃骨头");
 	}
 }
 
