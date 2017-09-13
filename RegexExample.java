@@ -1,7 +1,7 @@
 //http://www.runoob.com/java/java-regular-expressions.html
 
 import java.util.Arrays;
-import java.util.regex.*;
+import java.util.regex.Pattern;
 
 public class RegexExample {
    public static void main(String args[]) {
@@ -14,14 +14,12 @@ public class RegexExample {
 	   
 	   // 用 split 分割字符串
 	   String src = "http://gitlab.alipay-inc.com/internal_release/imobilegw/tree/ANT02220651_20170814_imobilegw";
-	   String regEx="/";
-	   Pattern p=Pattern.compile(regEx);
-	   String[] r=p.split(src);
-	   System.out.println(Arrays.toString(r));
+		String[] splitarray = src.split("/");
+		System.out.println(Arrays.toString(splitarray));
 	   
-	   String groupName=r[3];  //internal_release
-	   String projectName=r[4];//imobilegw
-	   String branchName=r[6];	//ANT02220651_20170814_imobilegw
+		String groupName = splitarray[3]; // internal_release
+		String projectName = splitarray[4];// imobilegw
+		String branchName = splitarray[6]; // ANT02220651_20170814_imobilegw
 	   System.out.println("groupName:" + groupName );
 	   System.out.println("projectName:" + projectName);
 	   System.out.println("branch:" + branchName);
